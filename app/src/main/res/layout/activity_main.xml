@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/refresh_layout"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+      
+<ProgressBar
+    android:layout_width="match_parent"
+    android:layout_height="-2dp"
+    android:id="@+id/progress_bar"
+    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+    >
+</ProgressBar>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="580sp"
+
+            >
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/webview"
+                >
+            </WebView>
+
+        </ScrollView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="56sp"
+            android:id="@+id/bottom"
+            app:itemRippleColor="@color/colorPrimaryDark"
+            app:menu="@menu/bottom_navigation"
+            >
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</LinearLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

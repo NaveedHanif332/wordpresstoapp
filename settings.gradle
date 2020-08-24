@@ -1,0 +1,2 @@
+rootProject.name='Talent hub'
+include ':app'
